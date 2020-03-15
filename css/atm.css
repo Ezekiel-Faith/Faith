@@ -1,0 +1,128 @@
+body {
+    background-color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#container {
+    width: 50%;
+    margin: auto;
+}
+
+.page {
+    background: rgb(247, 244, 244);
+    height: 50vh;
+    margin-top: 25%;
+    border: 6px solid rgb(255, 208, 0);
+    border-radius: 10px;
+}
+
+.content {
+    margin-top: 30px;
+    text-align: center;
+    margin: 0 20px;
+}
+
+button {
+    background: #000;
+    height: 40px;
+    margin-bottom: 5px;
+    padding: 0 12px;
+    font-weight: bolder;
+    border: 3px solid #daa520;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+}
+
+button:hover {
+    background: #daa520;
+    color: #000;
+    cursor: pointer;
+    transition: 700ms;
+}
+
+.user-input input{
+    border-radius: 5px;
+    outline: none;
+    height: 30px;
+    width: 20%;
+    margin-bottom: 12px;
+}
+
+.user-input input:focus{
+    text-align: center;
+}
+
+.type-of-trans {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 300px;
+    grid-row-gap: 90px;
+}
+
+/*.page-1 .content div select{
+    /* margin-top: 70px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    outline: none;
+    width: 50%;
+    border-radius: 12px;
+    box-shadow: 1px 1px 1px #ccc;
+    border: none;
+}*/
+
+.card {
+    grid-row-gap: 10px;
+}
+
+
+.page-2 .content h2 {
+    margin-top: 40px;
+}
+
+.page-3 .content h3{
+    margin: 50px 0 30px 0;
+}
+
+
+.page-4 .content h3 {
+    margin: 80px 0 30px 0;   
+}
+
+.page-5 .content h3 {
+    margin-top: 55px;   
+}
+
+.page-6 .content h2 {
+    margin-top: 40px;   
+}
+
+.page-7 .content h3 {
+    margin-top: 50px;   
+}
+
+.page-8 .content .amount-choice {
+    margin-top: 50px;   
+}
+
+.page-9 .content h3 {
+    margin-top: 55px; 
+}
+
+.page-10 .content h2 {
+    margin-top: 40px;   
+}
+
+.page-11 .content .amount-choice {
+    margin-top: 50px;   
+}
+
+.page-12 .content h3 {
+    margin-top: 55px; 
+}
+
+.page-13 .content h2 {
+    margin-top: 40px;   
+}

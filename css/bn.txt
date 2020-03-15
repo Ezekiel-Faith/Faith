@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'josefin sans';
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+    background: url('../img/bg-pattern-desktop.svg');
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    align-items: center;
+    height: 100vh;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    padding-bottom: 1rem;
+}
+
+#content .logo {
+    margin-top: 8vh;
+    margin-bottom: 15vh;
+}
+
+section {
+    margin-right: 100px;
+}
+
+section h1 {
+    letter-spacing: 20px;
+    font-size: 46px;
+    text-transform: uppercase;
+}
+
+section .font-1 {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+section .font-2 {
+    font-weight: 600;
+}
+
+section .text-3 p {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color: hsl(0, 36%, 70%);
+    line-height: 22px;
+}
+
+section .input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section input:focus {
+    outline: none;
+    border: 2px hsl(0, 93%, 68%) solid;
+}
+
+section div input {
+    width: 60%;
+    height: 40px;
+    border: 0.5px hsl(0, 36%, 70%) solid;
+    border-radius: 20px;
+    font-family: 'josefin sans';
+    background: none;
+    font-size: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+section .input img {
+    position: absolute;
+    left: 25.4vw;
+}
+
+section .input a {
+    position: absolute;
+    background: #555;
+    left: 28vw;
+    padding: 17px 40px;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+section .input p {
+    position: absolute;
+    margin-top: 5.5vh;
+    margin-left: 1.4vw;
+    color: hsl(0, 93%, 68%);
+    font-size: 10px;
+    font-weight: 400;
+}
+
+#right {
+    flex: 1.2;
+    height: 100vh;
+    position: relative;
+    background: url('../img/hero-desktop.jpg') no-repeat center center / cover;
+} 
+
+@media(max-width: 1200px) {
+    section div input {
+        width: 70%;
+    }
+
+    section .input img {
+        left: 27vw;
+    }
+
+    section .input a {
+        left: 30vw;
+    }
+}
+
+@media(max-width: 957px) {
+    #content {
+        width: 73%;
+    }
+
+    section div input {
+        width: 80%;
+    }
+
+    section .input img {
+        left: 31vw;
+    }
+
+    section .input a {
+        left: 35vw;
+    }
+}
+
+@media(max-width: 500px) {
+    #content {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    #content .logo {
+        margin-top: 5vh;
+        height: 0vh;
+    }
+
+    #right{
+        display: none;
+    }
+
+    #left {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #top { 
+        height: 50vh;
+        width: 100%;
+        background: url('../img/hero-mobile.jpg') no-repeat;
+    }
+}
